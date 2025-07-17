@@ -1,23 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>VELNOVA - Explore Trending Products</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELNOVA | Official Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.razorpay.com/static/widget/payment-button.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="hero">
+    <img src="logo.png" alt="VELNOVA Logo" class="logo" />
     <h1>VELNOVA</h1>
-    <p>Your one-stop shop for trending gadgets and essentials.</p>
+    <p>Explore the Latest Trending Essentials & Tools</p>
   </header>
 
-  <section class="hero">
-    <h2>Discover, Buy & Track – All in One Place</h2>
-    <button onclick="window.location.href='products.html'">Shop Now</button>
+  <section class="products">
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1" />
+      <h3>Portable Mini Fan</h3>
+      <p>₹799</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2" />
+      <h3>LED Night Sensor Light</h3>
+      <p>₹499</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="payment">
+    <form action="https://razorpay.com/payment-button/pl_H9Xxxxxx" method="POST">
+      <script
+        src="https://checkout.razorpay.com/v1/payment-button.js"
+        data-payment_button_id="pl_H9Xxxxxx"
+        async
+      ></script>
+    </form>
+  </section>
+
+  <section class="order-status">
+    <h2>Track Your Order</h2>
+    <input type="text" placeholder="Enter Order ID" />
+    <button>Track</button>
   </section>
 
   <footer>
-    <p>© 2025 VELNOVA. All rights reserved.</p>
+    <nav>
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <p>&copy; 2025 VELNOVA. All rights reserved.</p>
   </footer>
 </body>
 </html>
