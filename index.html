@@ -3,54 +3,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VELNOVA | Official Store</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.razorpay.com/static/widget/payment-button.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VELNOVA | Your Tech Essentials Store</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="hero">
-    <img src="logo.png" alt="VELNOVA Logo" class="logo" />
+  <header>
+    <img src="logo.png" alt="VELNOVA Logo" class="logo"/>
     <h1>VELNOVA</h1>
-    <p>Explore the Latest Trending Essentials & Tools</p>
+    <p class="tagline">Power Up Your Lifestyle with Premium Tools & Gadgets</p>
   </header>
-
-  <section class="products">
-    <div class="product">
-      <img src="product1.jpg" alt="Product 1" />
-      <h3>Portable Mini Fan</h3>
-      <p>₹799</p>
-      <a href="https://rzp.io/rzp/fyOtIxA" target="_blank">
-  <button style="padding: 10px 20px; background-color: #1f1f1f; color: white; border: none; border-radius: 5px; cursor: pointer;">
-    Buy Now
-  </button>
-</a>
-    </div>
-  </section>
-
-  <section class="payment">
-    <form action="https://razorpay.com/payment-button/pl_H9Xxxxxx" method="POST">
-      <script
-        src="https://checkout.razorpay.com/v1/payment-button.js"
-        data-payment_button_id="pl_H9Xxxxxx"
-        async
-      ></script>
-    </form>
-  </section>
-
-  <section class="order-status">
-    <h2>Track Your Order</h2>
-    <input type="text" placeholder="Enter Order ID" />
-    <button>Track</button>
-  </section>
-
+  <main>
+    <section class="product-grid">
+      <article class="product">
+        <img src="images/gadget1.jpg" alt="Gadget 1"/>
+        <h2>Multifunctional Smart Tool</h2>
+        <p>₹899</p>
+        <a href="https://rzp.io/r/fyOtIxA" class="buy-btn">Buy Now</a>
+      </article>
+    </section>
+  </main>
   <footer>
-    <nav>
-      <a href="terms.html">Terms & Conditions</a> |
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="contact.html">Contact Us</a>
-    </nav>
-    <p>&copy; 2025 VELNOVA. All rights reserved.</p>
+    <a href="terms.html">Terms & Conditions</a> |
+    <a href="contact.html">Contact</a>
   </footer>
 </body>
 </html>
