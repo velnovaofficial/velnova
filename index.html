@@ -1,48 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VELNOVA | Premium Tech Store</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>VELNOVA | Home</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+  <nav>
+    <img src="images/logo.jpg" alt="VELNOVA Logo" class="logo"/>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
   <header class="hero">
-    <img src="https://res.cloudinary.com/dymlmjpcq/image/upload/v1752750051/logo_cng71u.png" alt="VELNOVA Logo" class="logo" />
-    <h1>VELNOVA</h1>
-    <p class="tagline">Empowering Smart Living with Gadgets</p>
+    <h1>Welcome to VELNOVA</h1>
+    <p>Innovative Gadgets for Everyday Life</p>
   </header>
-
-  <section class="product-grid">
-    <h2>Our Featured Product</h2>
+  <main>
+    <h2>Featured Product</h2>
     <div class="product-card">
-      <img src="https://res.cloudinary.com/dymlmjpcq/image/upload/v1752750108/gadget1_wdjl86.jpg" alt="Mini Fan" />
+      <img src="https://res.cloudinary.com/dymlmjpcq/image/upload/v1752750108/gadget1_wdjl86.jpg" alt="Portable Mini Fan"/>
       <h3>Portable Mini Fan</h3>
       <p class="price">₹799</p>
-      <div class="buttons">
-        <button onclick="buyNow()">Buy Now</button>
-        <button onclick="addToCart()">Add to Cart</button>
+      <div class="product-buttons">
+        <button onclick="addToCart('123')">Add to Cart</button>
+        <button onclick="buyNow('123')">Buy Now</button>
       </div>
     </div>
-  </section>
-
-  <section class="order-status">
-    <h2>Order Flow</h2>
-    <ul class="status-flow">
-      <li>Order Placed</li>
-      <li>Dispatched</li>
-      <li>Tracking</li>
-      <li>Delivered</li>
-    </ul>
-  </section>
-
+  </main>
   <footer>
-    <p>&copy; 2025 VELNOVA. All rights reserved.</p>
+    <a href="privacy.html">Privacy Policy</a> | 
     <a href="terms.html">Terms</a> | 
-    <a href="privacy.html">Privacy</a> | 
-    <a href="refund.html">Refund Policy</a>
+    <a href="return.html">Returns</a>
+    <br/>
+    &copy; 2025 VELNOVA
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
